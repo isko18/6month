@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     
     'rest_framework',
     
-    'apps.users'
+    'apps.users',
+    'apps.posts',
 ]
 
 MIDDLEWARE = [
@@ -207,3 +208,6 @@ ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
